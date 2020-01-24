@@ -1,0 +1,18 @@
+1. Create 2 bukets
+gsutil mb -c multi-regional gs://mybucket-urvee/
+gsutil mb -c multi-regional gs://mybucket-urvee2/
+
+2.Upload a local file to the bucket
+gsutil cp urvee.txt gs://mybucket-urvee/
+
+3.Transfer object from one bucket to another
+gsutil cp -r gs://mybucket-urvee/* gsutil://mybucket-urvee2/
+
+4.List objcts in a bucket
+gsutil ls gs://mybucket-urvee2
+
+5. Download an obejct
+gsutil cp gs://mybucket-urvee2/urvee.txt Desktop/urvee.txt
+
+6.Delete all objects from th bucket
+gsutil rm -a gs://mybucket-urvee2/**

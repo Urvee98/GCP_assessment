@@ -1,0 +1,14 @@
+1. To create a VM Instance
+gcloud compute instances create urvee-vm \--image ubuntu-1604-xenial-v20200108 \--image-project ubuntu-os-cloud
+
+2.To compute the disk list
+gcloud compute disks list
+
+3.To resize the disk
+gcloud compute disks resize urvee-vm --zone=us-east1-b --size 50
+
+4.To mount the disk 
+(to be executed in SSH)
+lsblk
+sudo growpart /dev/sda1/
+df -h 
