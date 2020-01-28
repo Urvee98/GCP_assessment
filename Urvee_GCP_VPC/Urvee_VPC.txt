@@ -1,0 +1,34 @@
+Name: Urvee Chaudhari
+GCP-VPC Stepwise solutions
+
+Q1
+1)	Click on create an instance
+2)	Using the correct conventions, name the instance
+3)	Select the region and zone for the instance
+4)	Select the machine type as f1 Micro
+5)	Check the network interface as default
+6)	Click on create
+
+Q2
+1)	Click on create an instance
+2)	Using the correct conventions, name the instance
+3)	Select the region and zone for the instance
+4)	Select the machine type as f1 Micro
+5)	Check the network interface and set the external IP to none (Thus creating a private instance)
+6)	Click on create
+
+Q3
+1)	Go to Cloud NAT
+2)	Enter the gateway name
+3)	Select whichever VPC Network is required 
+4)	Select the region
+5)	Create a cloud router
+6)	In NAT Mapping select ‘Primary ranges for all subnets’ 
+7)	Click on create. Private subnets in that region are connected to the internet.
+
+Q4
+1)	Open the SSH Terminal of public instance
+2)	Enter the ssh private-instance-name 
+3)	Enter the command:
+ sudo apt-get install nginx
+
